@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complaint Portal</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+</head>
+<body>
+  <body>
+    <nav class="navbar navbar-default techfont custom-navbar">
+        <div class="container">
+            <ul class="nav nav-pills">
+              <li role="presentation"><a href="{%url 'Complaintapp:homepage'%}">Home</a></li>
+              <li role="presentation"><a href="{%url 'Complaintapp:about'%}">About</a></li>
+                <li role="presentation"><a href="{%url 'Complaintapp:warden'%}">Warden Details</a></li>
+                <li role="presentation"><a href="{%url 'Complaintapp:details'%}">Complaint Details</a></li>
+            </ul>
+        </div>
+   </nav>
+
+
+      {%block body_block%}
+      {%endblock%}
+
+
+
+</body>
+</html>
