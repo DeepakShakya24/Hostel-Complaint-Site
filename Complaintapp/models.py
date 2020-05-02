@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class ComplaintInfo(models.Model):
     name=models.CharField(max_length=255)
+    email = models.EmailField(null=True)
     year=models.CharField(max_length=90)
     enrollment_num=models.IntegerField(unique=True)
     room_num=models.IntegerField(unique=True)

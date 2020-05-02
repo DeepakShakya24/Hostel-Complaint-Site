@@ -130,3 +130,4 @@ STATIC_FILES=[STATIC_ROOT,]
 
 
 MEDIA_URL = '/media/'
+

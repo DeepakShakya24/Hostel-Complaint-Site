@@ -2,6 +2,9 @@ from django.shortcuts import render
 from Complaintapp.forms import InfoForm
 from Complaintapp.models import WardenInfo,ComplaintInfo
 
+
+
+
 def base(request):
     return render(request,'Complaintapp/base.html')
 

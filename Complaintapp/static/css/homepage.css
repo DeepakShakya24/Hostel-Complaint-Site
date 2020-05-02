@@ -2,6 +2,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
+body{
+    background: none;
+}
 
 .blok1 {
   height: 100%;
@@ -43,4 +46,14 @@ padding: 8px 20px;
 text-decoration:none;
 border-radius:8px;
 cursor:pointer;
+}
+
+footer{
+    width:100%;
+	height: auto;
+	color: #17ff8d;
+	font-size: 23px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 350px;
 }
