@@ -51,9 +51,10 @@ cursor:pointer;
 footer{
     width:100%;
 	height: auto;
+	background-color: #333;
 	color: #17ff8d;
 	font-size: 23px;
 	text-align: center;
 	line-height: 50px;
-	margin-top: 350px;
+	margin-top: -4px;
 }
