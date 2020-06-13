@@ -1,0 +1,16 @@
+{%extends 'Complaintapp/base.html'%}
+{%block body_block%}
+{%load staticfiles%}
+<link rel="stylesheet" href="{%static 'css/homepage.css'%}">
+<div class="container-fluid blok1">
+    	<div class="text col-md-4">
+			 <h1 class="display-4" style="font-size: larger;"><strong>Any Problem!Regarding to Hostel</strong></h1>
+                <div class="line"></div>
+                <p><em>Give your Complain Here!</em></p>
+                <a class="link" href="{%url 'Complaintapp:info'%}"><span>Click Here!</span></a>
+        </div>
+
+
+</div>
+    <footer>&copy;Created by: Deepak Shakya</footer>
+{%endblock%}

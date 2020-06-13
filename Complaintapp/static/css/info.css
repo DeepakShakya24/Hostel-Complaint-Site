@@ -1,0 +1,54 @@
+.jumbotron{
+	width: 600px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+.jumbotron .action-button:hover, .jumbotron .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+
+	/*background = gradient + image pattern combo*/
+	background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+
+	 animation-name: example;
+     animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color:rgba(155, 89, 182, 0.6);}
+  to {background-color: rgba(196, 102, 0, 0.6);}
+}
+
+body{
+	background: none;
+}
