@@ -1,31 +1,23 @@
-{%extends 'Complaintapp/base.html'%}
-{%block body_block%}
-{%load staticfiles%}
-<link rel="stylesheet" href="{%static 'css/detail.css'%}">
-    {%if mycomplaints%}
-       <h1 style="text-align: center; font-weight: bold;margin-top: 70px; margin-bottom:0;">Complaint Details</h1>
+{%extends 'Complaintapp/base.html'%} {%block body_block%} {%load staticfiles%}
+<link rel="stylesheet" href="{%static 'css/detail.css'%}"> {%if mycomplaints%}
+<h1 style="text-align: center; font-weight: bold;margin-top: 70px; margin-bottom:0;">Complaint Details</h1>
 <table>
-  <tr>
-    <th>S.NO</th>
-    <th>Name</th>
-    <th>Year</th>
-    <th>Enrollment No.</th>
-    <th>Room No.</th>
-    <th>Complains</th>
-  </tr>
+    <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Enrollment No.</th>
+        <th>Room No.</th>
+        <th>Complains</th>
+    </tr>
 
     {%for list in mycomplaints%}
     <tr>
-      <td class="list">{{list.id}}</td>
-      <td class="list">{{list.name}}</td>
-      <td class="list">{{list.year}}</td>
-      <td class="list">{{list.enrollment_num}}</td>
-      <td class="list">{{list.room_num}}</td>
-      <td class="list">{{list.complaintbox}}</td>
+        <td class="list">{{list.id}}</td>
+        <td class="list">{{list.name}}</td>
+        <td class="list">{{list.year}}</td>
+        <td class="list">{{list.enrollment_num}}</td>
+        <td class="list">{{list.room_num}}</td>
+        <td class="list">{{list.complaintbox}}</td>
     </tr>
-    {%endfor%}
-
-    {%else%}
-        print("error")
-    {%endif%}
-{%endblock%}
+    {%endfor%} {%else%} print("error") {%endif%} {%endblock%}

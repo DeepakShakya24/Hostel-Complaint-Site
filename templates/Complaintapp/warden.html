@@ -1,14 +1,12 @@
-{%extends 'Complaintapp/base.html'%}
-{%block body_block%}
-{%load staticfiles%}
+{%extends 'Complaintapp/base.html'%} {%block body_block%} {%load staticfiles%}
 <link rel="stylesheet" href="{%static 'css/warden.css'%}">
 <div class="flex-container">
-{%for i in img%}
- <div>
- <img src="{{i.image.url}}" width="400">
- <p>Name:{{i.warden_name}}</p>
- <p>Designation:{{i.designation}}</p>
-</div>
- {%endfor%}
+    {%for i in img%}
+    <div>
+        <img src="{{i.image.url}}" width="400">
+        <p>Name:{{i.warden_name}}</p>
+        <p>Designation:{{i.designation}}</p>
+    </div>
+    {%endfor%}
 </div>
 {%endblock%}
