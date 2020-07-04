@@ -3,3 +3,10 @@
     height: 50px;
     font-size: large;
 }
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+}
