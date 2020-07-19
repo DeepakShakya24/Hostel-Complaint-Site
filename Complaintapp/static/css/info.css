@@ -1,8 +1,8 @@
 .jumbotron {
     width: 600px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     text-align: center;
-    position: relative;
+    margin-top: 500px;
 }
 
 .jumbotron fieldset {
@@ -13,7 +13,6 @@
     padding: 20px 30px;
     box-sizing: border-box;
     width: 80%;
-    margin: 0 10%;
     /*stacking fieldsets above each other*/
     position: relative;
 }

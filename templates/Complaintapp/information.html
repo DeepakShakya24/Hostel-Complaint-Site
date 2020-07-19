@@ -1,11 +1,11 @@
-{%extends 'Complaintapp/base.html'%} {%block body_block%} {%load staticfiles%} {% load crispy_forms_tags %}
-<link rel="stylesheet" href="{%static 'css/info.css'%}">
+{%extends 'Complaintapp/base.html'%} {%block body_block%} {%load staticfiles%} {% load bootstrap3 %}
+<link rel="stylesheet" href="{%static 'css/info.css'%}" />
 <form class="jumbotron" method="post">
     <form class="jumbotron" method="post">
         <fieldset>
             <h2 class="fs-title">Fill your Complaints!</h2>
-            {%csrf_token%} {{form|crispy}}
-            <input type="submit" class='btn btn-primary action-button btn-lg' value="Submit">
+            {%csrf_token%} {%bootstrap_form form%}
+            <input type="submit" class="btn btn-primary action-button btn-lg" value="Submit" />
         </fieldset>
     </form>
     {% if messages%}
@@ -16,10 +16,11 @@
     </ul>
     {% endif %}
     <footer class="page-footer font-big">
-
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3" style="font-weight: bold;font-size: large; padding:20px;">&copy;2020 Created by: Deepak Shakya</div>
+        <div class="footer-copyright text-center py-3" style="font-weight: bold; font-size: large; padding: 20px;">
+            &copy;2020 Created by: Deepak Shakya
+        </div>
         <!-- Copyright -->
-
     </footer>
     {%endblock%}
+</form>
